@@ -1,0 +1,9 @@
+replicaCount: 2
+image:
+  repository: oyester-ops
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 3000
